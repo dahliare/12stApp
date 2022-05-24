@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
     EditText requestText;
     TextView responseText;
 
+
     static RequestQueue requestQueue;
 
     @Override
@@ -87,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
         responseText.append(data + "\n");
 
     }
-    public void processResponse(String reponse)
+    public void processResponse(String response)
     {
         Gson gson = new Gson();
         MovieList movieList = gson.fromJson(response, MovieList.class);
